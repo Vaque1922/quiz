@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Createquizz</servlet-name>
+        <servlet-class>com.shiv.controller.Createquizz</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddQuestionServlet</servlet-name>
+        <servlet-class>com.shiv.controller.AddQuestionServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteTable</servlet-name>
+        <servlet-class>com.shiv.controller.DeleteTable</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>YourResultServlet</servlet-name>
+        <servlet-class>com.shiv.controller.YourResultServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Createquizz</servlet-name>
+        <url-pattern>/Createquizz</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddQuestionServlet</servlet-name>
+        <url-pattern>/AddQuestionServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteTable</servlet-name>
+        <url-pattern>/DeleteTable</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>YourResultServlet</servlet-name>
+        <url-pattern>/YourResultServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
